@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container{
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+           min-height: 1000px; 
+           margin: 50px; 
+           background: white;
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+        }
+        .container .left_side{
+            position: relative;
+            background:lightslategray;
+            padding: 40px;
+            box-shadow: 0 35px 55px rgba(0,0,0, 1);
+        }
+        .container.right_side{
+            position: relative;
+            background: white;
+            padding: 40px;
+        }
+        .profile{
+            position:relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid rgba(255, 255, 255, .1);
+        }
+        .profile .imgbx {
+            position: relative;
+            width:200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+       .profile .imgbx img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .profile h2{
+            color: white;
+            font: size 1.5em;
+            margin-top: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            line-height: 1.4em;
+        }
+        .contactinfo{
+            padding:40px;
+
+        }
+        .title{
+            color:white;
+            text-transform:uppercase;
+            font-weight:600;
+            letter-spacing:1px;
+            margin-bottom: 20px;
+        }
+        .contactinfo ul{
+            position: relative;
+        }
+       .contactinfo ul li{
+           position: relative;
+           margin: 10px;
+           cursor: pointer;
+       }
+       .Education li{
+           margin-bottom: 15px;
+       }
+       .Education h5{
+           color:skyblue;
+           font-weight:500;
+       }
+       .Education h4{
+           color: white;
+           font-weight: 300;
+       }
+       .Language{
+           color: wheat;
+       }
+       .Language .percentage{
+           position:relative;
+           width:100%;
+           height:6px;
+           background:skyblue;
+           display: block;
+           margin: 5px;
+       }
+       .Language .percentage div{
+           position: absolute;
+           top:0;
+           left: 0;
+           height: 100%;
+           background:skyblue;
+       }
+       .about{
+           margin-bottom: 50px;
+       }
+       .about:last-child{
+           margin-bottom: 0;
+       }
+        .title2{
+            color: blue;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        p{
+     
+        margin-left: 20px;
+        color:black;
+        letter-spacing: 1px;
+        }
+        .project{
+            color: black;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            
+        }
+        .Technical{
+            color: black;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+
+        }
+        .training{
+            color: black;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+
+        }
+      
+          .achievement{
+            color: black;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+          }
+           
+          .personal,.hoobies{
+            color: black;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+          }
+          
+        
+    </style>
+</head>
+<body>
+    <div class="container"> 
+    <div class="left_side">
+        <div class="profile">
+            <div class="imgbx">
+                <img src="SHIV.JPG.jpg">
+                </div>
+                <h2>Shivender singh</h2>
+    </div>
+    <div class="contactinfo">
+    <h3 class="title">Contact info</h3>
+    <ul>
+        <li>
+            <span class="text">Mobile no.:7703882670</span>
+            </li>
+            <li>
+                <span class="text">Email:singhsivendra437@gmail.com</span>
+                </li>
+                <li>
+                    <span class="text">Address:Village:Aalhahedi,Najibabad,Bijnor</span>
+                    </li>
+
+    </ul>
+    </div>
+    <div class="Education">
+        <h3 class="title">Education</h3>
+        <ul>
+            <li>
+              <h5>2012-2013</h5>
+              <h4>Matriculation :84.80%</h4>
+              <h4>RRMPS</h4>
+              
+                </li>
+                <li>
+                    <h5>2014-2015</h5>
+                    <h4>Senoir Secondary:85.40% </h4>
+                    <h4>RRMPS</h4>
+                    </li>
+                    <li>
+                        <h5>2026-2020</h5>
+                        <h4>Bachelor Degree In Mechanical Engineering:71.50% </h4>
+                        <h4>Galgotia College Of Engineering And Technology </h4>
+                        </li>
+    
+                    </ul>
+    </div>
+    <div class="Language">
+        <h3 class="title">Languages</h3>
+        <ul>
+            <li>
+            <span class="text">English</span>
+            <span class="percentage">
+            <div style="width:90%;"></div>
+            <BR>
+            </span>
+            </li>
+            <BR>
+            <li>
+            <span class="text">Hindi</span>
+            <span class="percentage">
+            <div style="width:90%;"></div>
+            </span>
+        </li>
+        </ul>
+    </div>
+    </div>
+    
+    <div class="right_side">
+<div class="about">
+ <h2 class="title2"><ul>Carrer Objective</ul></h2>
+         <p>To succeed in an environment of growth and excellence to attain a position which provides job satisfaction,
+         self development and helps me to achieve personal as well as organizational goals.</p>
+    </div>
+    <div class="project">
+    <h2 class="title2"><ul>Project</ul></h2>
+        <ul>
+            <li>Title:Hybrid Bike</li>
+            <br>
+            <li>Duration:jan.2019-march.2020</li>
+            <br>
+            <li>Description:
+            <span class="Description">A Bike that is modified to work on the fuel as well as battery one at a time. Electric motor is used along with engine, when the bike runs on engine its charges the batteries 
+                and then can be switched on to electric motor when batteries are charged. Eco-friendly in nature</span></li>
+        </ul>
+    </div>
+    <div class="Technical">
+        <h2 class="title2"><ul>TECHNICAL COMPETENCIES</ul></h2>
+            <ul>
+                <li>Basic knowledge in C Language</li>
+                <br>
+                <li>Basic knowledge in Java Language</li>
+                <br>
+                <li>Basic knowledge in HTML and CSS </li>
+            </ul>
+        </div>
+        <div class="training">
+            <h2 class="title2"><ul>Training</ul></h2>
+                <ul>
+                    <li>Company:BHEL</li>
+                    <br>
+                    <li>Duration:june2018-july.2018</li>
+                    <br>
+                    <li>Topic:GeneralAwareness of steam turbine manufacturing </li>
+                    <br>
+                    <li>Description:: Process of steam turbine manufacturing </li>
+                </ul>
+            </div>
+        <div class="achievement">
+            <h2 class="title2"><ul>ACHIEVEMENT</ul> </h2>
+                <ul>
+                    <li>Gold Medalist in Science Exhibition</li>
+                    <br>
+                    <li>Gold Medalist in Athletics</li>
+                </ul>
+            </div>
+            <div class="personal">
+                <h2 class="title2"><ul> PERSONAL COMPETENCY  </ul></h2>
+                    <ul>
+                        <li>Team work</li>
+                        <br>
+                        <li>Self Motivated</li>
+                        <br>
+                        <li>Adaptability</li>
+                        <br>
+                        <li>Result Oriented</li>
+                    </ul>
+                </div>
+                <div class="hobbies">
+                    <h2 class="title2"><ul> HOBBIES  </ul></h2>
+                        <ul>
+                            <li>Travelling</li>
+                            <br>
+                            <li>Athletics</li>
+                            <br>
+                            <li>Team Sport</li>
+                            <br>
+</ul>
+</div>
+            <div style="margin-left: 8CM;"><B>SHIVENDER SINGH<B></div>
+                            
+                
+</div>
+</div>
+
+</body>
+</html>
